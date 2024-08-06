@@ -19,11 +19,13 @@ struct CalendarScreen: View {
             VStack(alignment: .leading, spacing: 0) {
                 CalendarHeader(calendarViewModel: $calendarViewModel, currentDate: $currentDate, changeToToday: $changeToToday, currentMonthIndex: $calendarViewModel.currentMonthIndex)
                 
-                ForEach(calendarViewModel.getJournalEntryForDay(date: currentDate), id: \.id) { entry in
-                    let _ = print(entry)
-                    JournalEntryScreen(journalEntry: entry)
+                ScrollView {
+                    ForEach(calendarViewModel.getJournalEntryForDay(date: currentDate), id: \.id) { entry in
+                        let _ = print(entry)
+                        JournalEntryScreen(journalEntry: entry)
+                    }
+                    .padding()
                 }
-                
             }
             .vSpacing(.top)
             .navigationTitle("Calendar")

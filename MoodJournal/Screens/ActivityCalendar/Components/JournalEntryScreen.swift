@@ -10,16 +10,31 @@ import SwiftUI
 struct JournalEntryScreen: View {
     var journalEntry: JournalEntry
     
+    var screenWidth: CGFloat {
+        UIScreen.main.bounds.width
+    }
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(journalEntry.title)
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundStyle(Color("calendardate")
-                    .secondary)
-            
-            Text(journalEntry.description)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(journalEntry.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundStyle(Color("calendardate")
+                        .secondary)
                 
+                Text(journalEntry.description)
+                
+            }
+            Spacer()
+        }
+        .padding()
+//        .padding(.leading, 20)
+        .background {
+            RoundedRectangle(cornerRadius: 20)
+                .shadow(radius: 10)
+                .frame(width: screenWidth - 30)
+                .foregroundStyle(Color(uiColor: UIColor.systemBackground))
         }
     }
 }
