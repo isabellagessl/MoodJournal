@@ -29,12 +29,12 @@ struct WeekScreen: View {
                         .font(.callout)
                         .fontWeight(.bold)
                         .textScale(.secondary)
-                        .foregroundStyle(calendarViewModel.isSameDate(day.date, currentDate) ? .white : calendarViewModel.isSameDate(day.date, Date()) ? .red : calendarViewModel.isDateInThisMonth(day.date, currentDate) ? .black : .secondary)
+                        .foregroundStyle(calendarViewModel.isSameDate(day.date, currentDate) ? .white : calendarViewModel.isSameDate(day.date, Date()) ? .red : calendarViewModel.isDateInThisMonth(day.date, currentDate) ? .primary : .secondary)
                         .frame(width: 35, height: 35)
                         .background {
                             if calendarViewModel.isSameDate(day.date, currentDate) {
                                 Circle()
-                                    .fill(calendarViewModel.isSameDate(day.date, Date()) ? .red : .black)
+                                    .fill(calendarViewModel.isSameDate(day.date, Date()) ? .red : .primary)
                                 //                                    .frame(width: 5)
                             }
                         }

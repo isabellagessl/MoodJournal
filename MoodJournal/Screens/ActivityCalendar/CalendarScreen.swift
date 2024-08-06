@@ -21,7 +21,6 @@ struct CalendarScreen: View {
                 
                 ScrollView {
                     ForEach(calendarViewModel.getJournalEntryForDay(date: currentDate), id: \.id) { entry in
-                        let _ = print(entry)
                         JournalEntryScreen(journalEntry: entry)
                     }
                     .padding()

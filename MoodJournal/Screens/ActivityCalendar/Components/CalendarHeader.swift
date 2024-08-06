@@ -17,7 +17,7 @@ struct CalendarHeader: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 5) {
-                Text(currentDate.format("MMM"))
+                Text(calendarViewModel.monthSlider.isEmpty ? currentDate.format("MMM") : calendarViewModel.monthSlider[calendarViewModel.currentMonthIndex][2].first?.date.format("MMM") ?? currentDate.format("MMM"))
                     .foregroundStyle(Color("calendardate"))
                 Text(currentDate.format("YYY"))
                     .foregroundStyle(.secondary)
@@ -43,25 +43,27 @@ struct CalendarHeader: View {
         }
         .padding(15)
         .hSpacing(.leading)
-        .background(.white)
+        .background(Color(uiColor: UIColor.systemBackground))
         .onAppear {
             if calendarViewModel.monthSlider.isEmpty {
                 let currentWeeks = Date().createWeekdaysForMonth()
                 
-                if let firstDate = currentWeeks.first?.first?.date {
-                    calendarViewModel.monthSlider.append(firstDate.createPreviousMonth())
-                }
+//                if let firstDate = currentWeeks.first?.first?.date {
+                calendarViewModel.monthSlider.append(currentDate.createPreviousMonth())
+//                }
                 
                 calendarViewModel.monthSlider.append(currentWeeks)
                 
-                if let lastDate = currentWeeks.last?.last?.date {
-                    calendarViewModel.monthSlider.append(lastDate.createNextMonth())
-                }
+//                if let lastDate = currentWeeks.last?.last?.date {
+                calendarViewModel.monthSlider.append(currentDate.createNextMonth())
+//                }
             }
         }
         .onChange(of: currentMonthIndex, initial: false) { oldValue, newValue in
             calendarViewModel.currentMonthIndex = currentMonthIndex
             calendarViewModel.paginateWeek()
+            currentMonthIndex = calendarViewModel.currentMonthIndex
+            let _ = print(currentMonthIndex)
         }
         .onChange(of: changeToToday) {
             if changeToToday {
@@ -79,6 +81,7 @@ struct CalendarHeader: View {
                 }
                 currentDate = Date()
                 changeToToday.toggle()
+                
             }
         }
     }

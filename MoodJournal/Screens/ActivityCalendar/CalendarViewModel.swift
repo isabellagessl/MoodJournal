@@ -16,20 +16,26 @@ class CalendarViewModel {
     
     func paginateWeek() {
         if monthSlider.indices.contains(currentMonthIndex) {
-            if let firstDate = monthSlider[currentMonthIndex].first?.first?.date, currentMonthIndex == 0 {
-                print("firstDate \(firstDate)")
+            
+            if let firstDate = monthSlider.first?[2].first?.date, currentMonthIndex == 0 {
+                print("first \(firstDate.formatted(date: .abbreviated, time: .omitted))")
                 monthSlider.insert(firstDate.createPreviousMonth(), at: 0)
+                print(monthSlider.count)
                 monthSlider.removeLast()
                 currentMonthIndex = 1
             }
             
-            if let lastDate = monthSlider[currentMonthIndex].last?.last?.date, currentMonthIndex == (monthSlider.count - 1) {
-                print(lastDate)
+            if let lastDate = monthSlider.last?[2].first?.date, currentMonthIndex == (monthSlider.count - 1) {
+                if let firstDate = monthSlider.first?.first?.first?.date {
+                    print("first \(firstDate.formatted(date: .abbreviated, time: .omitted))")
+                }
+                print("last \(lastDate.formatted(date: .abbreviated, time: .omitted))")
                 monthSlider.append(lastDate.createNextMonth())
                 monthSlider.removeFirst()
                 currentMonthIndex = monthSlider.count - 2
             }
         }
+        
     }
     
     func isSameDate(_ date1: Date, _ date2: Date) -> Bool {
