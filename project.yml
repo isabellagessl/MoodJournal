@@ -1,0 +1,31 @@
+name: moodJournal
+
+settings:
+  DEVELOPMENT_TEAM: 9HYXUXTGF6
+
+packages:
+  WrappingHStack:
+    url: https://github.com/ksemianov/WrappingHStack
+    version: 0.2.0
+
+targets:
+  MoodJournal:
+    type: application
+    platform: iOS
+    deploymentTarget:
+      iOS: 17.0
+    sources:
+      - path: MoodJournal
+        exclude: [Info.plist]
+    dependencies:
+      - package: WrappingHStack
+        product: WrappingHStack
+    settings:
+      TARGETED_DEVICE_FAMILY: 1
+      PRODUCT_NAME: MoodJournal
+      PRODUCT_BUNDLE_IDENTIFIER: com.isabellagessl.MoodJournal
+      INFOPLIST_FILE: MoodJournal/Info.plist
+    entitlements:
+      path: MoodJournal/MoodJournal.entitlements
+      properties:
+        aps-environment: development

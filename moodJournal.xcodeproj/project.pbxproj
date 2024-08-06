@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0510E6CDBC84B9A1B051799E /* Feeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB1B32F95E483FA1B38042 /* Feeling.swift */; };
+		0DE00BBA81EB66789BCECA76 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = B3AA9318B9D7878F9DAE776E /* WrappingHStack */; };
+		211C52BD22F5C451C12DF34C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0162C7C2A9B8FCA8405FBBEC /* Preview Assets.xcassets */; };
+		218C7E2905D52E88C8F19355 /* MoodTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F083D24D8D264F9484D2E /* MoodTag.swift */; };
+		23A7F9C02BF73DC758F1FAE3 /* MoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A24757EF95E1B8D311D1227 /* MoodScreen.swift */; };
+		4518AE5D8FB88992D79A066C /* MoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09282BAC65CCB5D4875E2F /* MoodViewModel.swift */; };
+		5EDACC7D2C6218E00068CD86 /* CalendarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC7C2C6218E00068CD86 /* CalendarScreen.swift */; };
+		5EDACC802C62191D0068CD86 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC7F2C62191D0068CD86 /* DateExtension.swift */; };
+		5EDACC822C621C770068CD86 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC812C621C770068CD86 /* ViewExtension.swift */; };
+		5EDACC852C621DDE0068CD86 /* CalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC842C621DDE0068CD86 /* CalendarHeader.swift */; };
+		5EDACC872C6222F40068CD86 /* WeekScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC862C6222F40068CD86 /* WeekScreen.swift */; };
+		5EDACC892C622E470068CD86 /* MonthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC882C622E470068CD86 /* MonthScreen.swift */; };
+		5EDACC8B2C6237380068CD86 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC8A2C6237380068CD86 /* CalendarViewModel.swift */; };
+		5EDACC8D2C623D230068CD86 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC8C2C623D230068CD86 /* JournalEntry.swift */; };
+		5EDACC8F2C623D9F0068CD86 /* JournalEntryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDACC8E2C623D9F0068CD86 /* JournalEntryScreen.swift */; };
+		6086D2C1EEDE4FE7FC5B402D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E24621EFBB92F377162F86 /* ContentView.swift */; };
+		6707B63EE0FB717E3B92DDE8 /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D26FF324353A057A94ECED9 /* BigButton.swift */; };
+		796BD794561D6E30EA700CB3 /* AddMoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6514ABC7E402E0DC9EC652 /* AddMoodScreen.swift */; };
+		8F7DC1DCBC023C832247B33D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE76D9E1E6FB1D96EA01BE1 /* Assets.xcassets */; };
+		AD76F2BE7E6E4FBB9C86FC6A /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74816057896EA94F5091DD8 /* CategoryItem.swift */; };
+		D5AE270A3AB69AECDCF67229 /* AddReasonsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBEE69F8EB7A267DC5494D /* AddReasonsScreen.swift */; };
+		E7BEBA4A3358EF760363046B /* MoodJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209CF93BDB67ABBB02B53F1 /* MoodJournalApp.swift */; };
+		F183611DC2F2C3BD44C21674 /* ReasonTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B921898FF5C7A3D0C625118E /* ReasonTag.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0162C7C2A9B8FCA8405FBBEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A24757EF95E1B8D311D1227 /* MoodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodScreen.swift; sourceTree = "<group>"; };
+		0E7F4437D0B955490643D9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		26CB1B32F95E483FA1B38042 /* Feeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
+		4E6F083D24D8D264F9484D2E /* MoodTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTag.swift; sourceTree = "<group>"; };
+		5EDACC7C2C6218E00068CD86 /* CalendarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScreen.swift; sourceTree = "<group>"; };
+		5EDACC7F2C62191D0068CD86 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		5EDACC812C621C770068CD86 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		5EDACC842C621DDE0068CD86 /* CalendarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeader.swift; sourceTree = "<group>"; };
+		5EDACC862C6222F40068CD86 /* WeekScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekScreen.swift; sourceTree = "<group>"; };
+		5EDACC882C622E470068CD86 /* MonthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScreen.swift; sourceTree = "<group>"; };
+		5EDACC8A2C6237380068CD86 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		5EDACC8C2C623D230068CD86 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		5EDACC8E2C623D9F0068CD86 /* JournalEntryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryScreen.swift; sourceTree = "<group>"; };
+		8D26FF324353A057A94ECED9 /* BigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
+		B209CF93BDB67ABBB02B53F1 /* MoodJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodJournalApp.swift; sourceTree = "<group>"; };
+		B921898FF5C7A3D0C625118E /* ReasonTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonTag.swift; sourceTree = "<group>"; };
+		C5DBEE69F8EB7A267DC5494D /* AddReasonsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReasonsScreen.swift; sourceTree = "<group>"; };
+		CEE76D9E1E6FB1D96EA01BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6D2A9123C4C1C0E2286E6BD /* MoodJournal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodJournal.entitlements; sourceTree = "<group>"; };
+		DD09282BAC65CCB5D4875E2F /* MoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewModel.swift; sourceTree = "<group>"; };
+		E23FE034BB7C6193EA452DE6 /* MoodJournal.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MoodJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6514ABC7E402E0DC9EC652 /* AddMoodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodScreen.swift; sourceTree = "<group>"; };
+		F3E24621EFBB92F377162F86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F74816057896EA94F5091DD8 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EEA2399A6D8DBE50BA59779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DE00BBA81EB66789BCECA76 /* WrappingHStack in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0368223A81FADA7A2278E768 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EC6514ABC7E402E0DC9EC652 /* AddMoodScreen.swift */,
+				C5DBEE69F8EB7A267DC5494D /* AddReasonsScreen.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		105AD6B1292215AAFB19B9C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E23FE034BB7C6193EA452DE6 /* MoodJournal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11350E6267BC91019891AAB8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5EDACC7B2C6218C70068CD86 /* ActivityCalendar */,
+				11A0A863214429E38C333917 /* Components */,
+				32C79C75C31E4B21F7E04F48 /* MoodScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		11A0A863214429E38C333917 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8D26FF324353A057A94ECED9 /* BigButton.swift */,
+				F74816057896EA94F5091DD8 /* CategoryItem.swift */,
+				4E6F083D24D8D264F9484D2E /* MoodTag.swift */,
+				B921898FF5C7A3D0C625118E /* ReasonTag.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		32C79C75C31E4B21F7E04F48 /* MoodScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0A24757EF95E1B8D311D1227 /* MoodScreen.swift */,
+				DD09282BAC65CCB5D4875E2F /* MoodViewModel.swift */,
+				0368223A81FADA7A2278E768 /* Components */,
+			);
+			path = MoodScreen;
+			sourceTree = "<group>";
+		};
+		3DD7DC62569D2593224FA0BB = {
+			isa = PBXGroup;
+			children = (
+				D0A754333EC1DA811640744F /* MoodJournal */,
+				105AD6B1292215AAFB19B9C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EDACC7B2C6218C70068CD86 /* ActivityCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				5EDACC832C621DD10068CD86 /* Components */,
+				5EDACC7E2C6218EB0068CD86 /* Utils */,
+				5EDACC7C2C6218E00068CD86 /* CalendarScreen.swift */,
+				5EDACC8A2C6237380068CD86 /* CalendarViewModel.swift */,
+			);
+			path = ActivityCalendar;
+			sourceTree = "<group>";
+		};
+		5EDACC7E2C6218EB0068CD86 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5EDACC7F2C62191D0068CD86 /* DateExtension.swift */,
+				5EDACC812C621C770068CD86 /* ViewExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5EDACC832C621DD10068CD86 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5EDACC842C621DDE0068CD86 /* CalendarHeader.swift */,
+				5EDACC862C6222F40068CD86 /* WeekScreen.swift */,
+				5EDACC882C622E470068CD86 /* MonthScreen.swift */,
+				5EDACC8E2C623D9F0068CD86 /* JournalEntryScreen.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		67D010DB53BD921ED7C8ADA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26CB1B32F95E483FA1B38042 /* Feeling.swift */,
+				5EDACC8C2C623D230068CD86 /* JournalEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC7EF594E0F40FC935ACA135 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0162C7C2A9B8FCA8405FBBEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0A754333EC1DA811640744F /* MoodJournal */ = {
+			isa = PBXGroup;
+			children = (
+				CEE76D9E1E6FB1D96EA01BE1 /* Assets.xcassets */,
+				F3E24621EFBB92F377162F86 /* ContentView.swift */,
+				0E7F4437D0B955490643D9F7 /* Info.plist */,
+				D6D2A9123C4C1C0E2286E6BD /* MoodJournal.entitlements */,
+				B209CF93BDB67ABBB02B53F1 /* MoodJournalApp.swift */,
+				67D010DB53BD921ED7C8ADA2 /* Models */,
+				BC7EF594E0F40FC935ACA135 /* Preview Content */,
+				11350E6267BC91019891AAB8 /* Screens */,
+			);
+			path = MoodJournal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64C8517B74951C51A8EE7275 /* MoodJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9AB1476E5F2B16E78BC48F /* Build configuration list for PBXNativeTarget "MoodJournal" */;
+			buildPhases = (
+				04955EBF619761438D4A9016 /* Sources */,
+				679B13C3057437F1C12E8A86 /* Resources */,
+				0EEA2399A6D8DBE50BA59779 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodJournal;
+			packageProductDependencies = (
+				B3AA9318B9D7878F9DAE776E /* WrappingHStack */,
+			);
+			productName = MoodJournal;
+			productReference = E23FE034BB7C6193EA452DE6 /* MoodJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10D26EED39A472C3C7F65D0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					64C8517B74951C51A8EE7275 = {
+						DevelopmentTeam = 9HYXUXTGF6;
+					};
+				};
+			};
+			buildConfigurationList = DC4DE30B175780AE6B2B887B /* Build configuration list for PBXProject "moodJournal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3DD7DC62569D2593224FA0BB;
+			packageReferences = (
+				6E3DDB62DF436E636BF3CA05 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64C8517B74951C51A8EE7275 /* MoodJournal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		679B13C3057437F1C12E8A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7DC1DCBC023C832247B33D /* Assets.xcassets in Resources */,
+				211C52BD22F5C451C12DF34C /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04955EBF619761438D4A9016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDACC872C6222F40068CD86 /* WeekScreen.swift in Sources */,
+				796BD794561D6E30EA700CB3 /* AddMoodScreen.swift in Sources */,
+				5EDACC7D2C6218E00068CD86 /* CalendarScreen.swift in Sources */,
+				D5AE270A3AB69AECDCF67229 /* AddReasonsScreen.swift in Sources */,
+				6707B63EE0FB717E3B92DDE8 /* BigButton.swift in Sources */,
+				AD76F2BE7E6E4FBB9C86FC6A /* CategoryItem.swift in Sources */,
+				5EDACC8D2C623D230068CD86 /* JournalEntry.swift in Sources */,
+				5EDACC8B2C6237380068CD86 /* CalendarViewModel.swift in Sources */,
+				5EDACC802C62191D0068CD86 /* DateExtension.swift in Sources */,
+				5EDACC892C622E470068CD86 /* MonthScreen.swift in Sources */,
+				6086D2C1EEDE4FE7FC5B402D /* ContentView.swift in Sources */,
+				0510E6CDBC84B9A1B051799E /* Feeling.swift in Sources */,
+				E7BEBA4A3358EF760363046B /* MoodJournalApp.swift in Sources */,
+				23A7F9C02BF73DC758F1FAE3 /* MoodScreen.swift in Sources */,
+				5EDACC822C621C770068CD86 /* ViewExtension.swift in Sources */,
+				218C7E2905D52E88C8F19355 /* MoodTag.swift in Sources */,
+				5EDACC8F2C623D9F0068CD86 /* JournalEntryScreen.swift in Sources */,
+				4518AE5D8FB88992D79A066C /* MoodViewModel.swift in Sources */,
+				F183611DC2F2C3BD44C21674 /* ReasonTag.swift in Sources */,
+				5EDACC852C621DDE0068CD86 /* CalendarHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		024F13C07714F4E1B1DAD180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9HYXUXTGF6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0DF42C061255899BBAAC7FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MoodJournal/MoodJournal.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MoodJournal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isabellagessl.MoodJournal;
+				PRODUCT_NAME = MoodJournal;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6EE42A5AE5ADA661CEBFD000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MoodJournal/MoodJournal.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MoodJournal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isabellagessl.MoodJournal;
+				PRODUCT_NAME = MoodJournal;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8577E1D5279816FC6D552853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9HYXUXTGF6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE9AB1476E5F2B16E78BC48F /* Build configuration list for PBXNativeTarget "MoodJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE42A5AE5ADA661CEBFD000 /* Debug */,
+				0DF42C061255899BBAAC7FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC4DE30B175780AE6B2B887B /* Build configuration list for PBXProject "moodJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024F13C07714F4E1B1DAD180 /* Debug */,
+				8577E1D5279816FC6D552853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E3DDB62DF436E636BF3CA05 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ksemianov/WrappingHStack";
+			requirement = {
+				kind = exactVersion;
+				version = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3AA9318B9D7878F9DAE776E /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E3DDB62DF436E636BF3CA05 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 10D26EED39A472C3C7F65D0E /* Project object */;
+}
