@@ -34,7 +34,7 @@ struct JournalEntryScreen: View {
             RoundedRectangle(cornerRadius: 20)
                 .shadow(radius: 10)
                 .frame(width: screenWidth - 30)
-                .foregroundStyle(Color(uiColor: UIColor.systemBackground))
+                .foregroundStyle(Color("journalbackground"))
         }
     }
 }

@@ -7,6 +7,9 @@ packages:
   WrappingHStack:
     url: https://github.com/ksemianov/WrappingHStack
     version: 0.2.0
+  SocketIO:
+    url: https://github.com/socketio/socket.io-client-swift
+    version: 16.1.0
 
 targets:
   MoodJournal:
@@ -18,6 +21,8 @@ targets:
       - path: MoodJournal
         exclude: [Info.plist]
     dependencies:
+      - package: SocketIO
+        product: SocketIO
       - package: WrappingHStack
         product: WrappingHStack
     settings:

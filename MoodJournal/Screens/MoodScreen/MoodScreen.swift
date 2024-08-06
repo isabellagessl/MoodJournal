@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WrappingHStack
 
 struct MoodScreen: View {
     @State var moodViewModel = MoodViewModel()
@@ -28,6 +29,14 @@ struct MoodScreen: View {
                 Text(moodViewModel.getCurrentMood()?.name ?? "")
                     .font(.system(size: 23))
                     .bold()
+                WrappingHStack(alignment: .leading) {
+                    ForEach(moodViewModel.getCurrentReasons()) {reason in
+                        if let category = moodViewModel.getCurrentCategory() {
+                            ReasonTag(reason: reason, active: true, category: category, onClick: {})
+                        }
+                    }
+                }.padding()
+                
                 Spacer()
             }
             .navigationTitle("Mood")

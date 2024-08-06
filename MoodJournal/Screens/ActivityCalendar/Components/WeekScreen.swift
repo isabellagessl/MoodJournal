@@ -29,7 +29,7 @@ struct WeekScreen: View {
                         .font(.callout)
                         .fontWeight(.bold)
                         .textScale(.secondary)
-                        .foregroundStyle(calendarViewModel.isSameDate(day.date, currentDate) ? .white : calendarViewModel.isSameDate(day.date, Date()) ? .red : calendarViewModel.isDateInThisMonth(day.date, currentDate) ? .primary : .secondary)
+                        .foregroundStyle(calendarViewModel.isSameDate(day.date, currentDate) ? Color(uiColor: UIColor.systemBackground) : calendarViewModel.isSameDate(day.date, Date()) ? .red : calendarViewModel.isDateInThisMonth(day.date, currentDate) ? .primary : .secondary)
                         .frame(width: 35, height: 35)
                         .background {
                             if calendarViewModel.isSameDate(day.date, currentDate) {

@@ -11,8 +11,7 @@ struct CalendarScreen: View {
     @State private var calendarViewModel = CalendarViewModel()
     @State private var currentDate: Date = Date()
     @State var changeToToday = false
-//    @State private var weekSlider: [[[Date.WeekDay]]] = []
-//    @State private var currentWeekIndex: Int = 1
+    @State var showAddActivitySheet = false
     
     var body: some View {
         NavigationStack {
@@ -29,13 +28,23 @@ struct CalendarScreen: View {
             .vSpacing(.top)
             .navigationTitle("Calendar")
             .toolbar {
-                ToolbarItem(placement: .primaryAction) {
+                ToolbarItem {
                     Button {
                         changeToToday = true
                     } label: {
                         Text("Today")
                     }
                 }
+                ToolbarItem(placement: .primaryAction) {
+                    Button {
+                        showAddActivitySheet = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $showAddActivitySheet) {
+                AddActivityScreen(calendarViewModel: $calendarViewModel, showSheet: $showAddActivitySheet)
             }
         }
     }

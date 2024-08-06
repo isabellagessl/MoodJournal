@@ -21,7 +21,10 @@ struct MoodJournalApp: App {
                     .tabItem {
                         Label("Calendar", systemImage: "calendar")
                     }
-                
+                ProfileScreen()
+                    .tabItem {
+                        Label("Profile", systemImage: "person.circle.fill")
+                    }
             }
         }
     }

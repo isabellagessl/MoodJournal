@@ -57,4 +57,8 @@ class MoodViewModel {
             $0.categroyId == categoryId
         })
     }
+    
+    func getCurrentReasons() -> [Reason] {
+        return reasons.filter({currentFeeling.reasonIds.contains($0.id)})
+    }
 }
