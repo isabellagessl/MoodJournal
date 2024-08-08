@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,14 @@
 		211C52BD22F5C451C12DF34C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0162C7C2A9B8FCA8405FBBEC /* Preview Assets.xcassets */; };
 		218C7E2905D52E88C8F19355 /* MoodTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F083D24D8D264F9484D2E /* MoodTag.swift */; };
 		23A7F9C02BF73DC758F1FAE3 /* MoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A24757EF95E1B8D311D1227 /* MoodScreen.swift */; };
+		28BFE021D83F4C2945B045E9 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4676698015EA00FDFD27D /* RegisterScreen.swift */; };
+		2BF261B4E23DAD8211238FCE /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30452F7F81004793835340B /* ProfileScreen.swift */; };
 		3595713145BC594CEED07762 /* JournalEntryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F8FC83602E30C6776A4EC /* JournalEntryScreen.swift */; };
+		3AC1A133BC08EABEB910EB39 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA41C7D6ACC414EA8412B4B /* PhotoViewModel.swift */; };
+		3C26F877CCF450E6847E7C05 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F17A4233CBBA604C6D62 /* User.swift */; };
 		4518AE5D8FB88992D79A066C /* MoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09282BAC65CCB5D4875E2F /* MoodViewModel.swift */; };
+		53F87A7A925CA4203F2BBDA7 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEFD2B0033AAE7CA5DDABB4 /* SocketService.swift */; };
 		5BF9043EF5B9338B565B4079 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E9FB1E4BEF150DD911915D /* JournalEntry.swift */; };
-		5E004BF42C62C52800253B2B /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E004BF32C62C52800253B2B /* ProfileScreen.swift */; };
 		5FAD28263546F0CD739FE6C7 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = B3AA9318B9D7878F9DAE776E /* WrappingHStack */; };
 		6086D2C1EEDE4FE7FC5B402D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E24621EFBB92F377162F86 /* ContentView.swift */; };
 		6707B63EE0FB717E3B92DDE8 /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D26FF324353A057A94ECED9 /* BigButton.swift */; };
@@ -24,12 +28,17 @@
 		796BD794561D6E30EA700CB3 /* AddMoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6514ABC7E402E0DC9EC652 /* AddMoodScreen.swift */; };
 		8F0AFA12C46E6EA07DF2916F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E39AD7E9C428498E317F5A /* DateExtension.swift */; };
 		8F7DC1DCBC023C832247B33D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE76D9E1E6FB1D96EA01BE1 /* Assets.xcassets */; };
+		97B98F76071959CA37F16D32 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4F08302B7F202EF02D2F2C06 /* Alamofire */; };
+		A811EE25C8F426067033FC28 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD40181C07446777C78B98 /* ProfileViewModel.swift */; };
+		A9A703399339FC000DEC6556 /* ServerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C130F0A4899200A82A39B /* ServerImage.swift */; };
 		AD76F2BE7E6E4FBB9C86FC6A /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74816057896EA94F5091DD8 /* CategoryItem.swift */; };
 		B08E26F5846556CF224AB736 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE137505EA238FF4C732CA /* ViewExtension.swift */; };
 		B7243B59628978966CA4B1B8 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2CC5C89E075227A7809FFB /* CalendarViewModel.swift */; };
+		D0EB8285FD6AEFAA9E0676B6 /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C3F3986DCC4D9B1E2685A9 /* ServerConfig.swift */; };
 		D5A2CEA6AF3BABCDECBBBD4A /* MonthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEC1B16613ABA45B77701B /* MonthScreen.swift */; };
 		D5AE270A3AB69AECDCF67229 /* AddReasonsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBEE69F8EB7A267DC5494D /* AddReasonsScreen.swift */; };
 		D9DDD5973D6063A11F461591 /* CalendarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0EC64E363367A5CB3F8E94 /* CalendarScreen.swift */; };
+		E0E9984309681BEBBB7172F8 /* FriendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0AF25BD76041272B7D753 /* FriendItem.swift */; };
 		E7BEBA4A3358EF760363046B /* MoodJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209CF93BDB67ABBB02B53F1 /* MoodJournalApp.swift */; };
 		F183611DC2F2C3BD44C21674 /* ReasonTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B921898FF5C7A3D0C625118E /* ReasonTag.swift */; };
 		F84355D3F2B1113693CD787D /* CalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC29A4F0D2E5735C1B678BB4 /* CalendarHeader.swift */; };
@@ -41,19 +50,26 @@
 		0E7F4437D0B955490643D9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1D0EC64E363367A5CB3F8E94 /* CalendarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScreen.swift; sourceTree = "<group>"; };
 		26CB1B32F95E483FA1B38042 /* Feeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
+		3CA41C7D6ACC414EA8412B4B /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		43C3F3986DCC4D9B1E2685A9 /* ServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
 		49E39AD7E9C428498E317F5A /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		4E6F083D24D8D264F9484D2E /* MoodTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTag.swift; sourceTree = "<group>"; };
 		5921F4EB150A9091566F8274 /* WeekScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekScreen.swift; sourceTree = "<group>"; };
 		5AEE137505EA238FF4C732CA /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
-		5E004BF32C62C52800253B2B /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		5FEFD2B0033AAE7CA5DDABB4 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		6CEEC1B16613ABA45B77701B /* MonthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScreen.swift; sourceTree = "<group>"; };
 		751493EFA8973D97ED39E882 /* AddActivityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityScreen.swift; sourceTree = "<group>"; };
 		78E9FB1E4BEF150DD911915D /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		8D26FF324353A057A94ECED9 /* BigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
+		92B0AF25BD76041272B7D753 /* FriendItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendItem.swift; sourceTree = "<group>"; };
 		9F2CC5C89E075227A7809FFB /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		AEA1F17A4233CBBA604C6D62 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AEB4676698015EA00FDFD27D /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		B209CF93BDB67ABBB02B53F1 /* MoodJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodJournalApp.swift; sourceTree = "<group>"; };
+		B8BD40181C07446777C78B98 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B921898FF5C7A3D0C625118E /* ReasonTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonTag.swift; sourceTree = "<group>"; };
 		BD2F8FC83602E30C6776A4EC /* JournalEntryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryScreen.swift; sourceTree = "<group>"; };
+		C30452F7F81004793835340B /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		C5DBEE69F8EB7A267DC5494D /* AddReasonsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReasonsScreen.swift; sourceTree = "<group>"; };
 		CEE76D9E1E6FB1D96EA01BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6D2A9123C4C1C0E2286E6BD /* MoodJournal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodJournal.entitlements; sourceTree = "<group>"; };
@@ -63,6 +79,7 @@
 		F3E24621EFBB92F377162F86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F74816057896EA94F5091DD8 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		FC29A4F0D2E5735C1B678BB4 /* CalendarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeader.swift; sourceTree = "<group>"; };
+		FE8C130F0A4899200A82A39B /* ServerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +89,7 @@
 			files = (
 				0DE00BBA81EB66789BCECA76 /* SocketIO in Frameworks */,
 				5FAD28263546F0CD739FE6C7 /* WrappingHStack in Frameworks */,
+				97B98F76071959CA37F16D32 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,10 +116,10 @@
 		11350E6267BC91019891AAB8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				5E004BF22C62C4D000253B2B /* ProfileScreen */,
 				F19ADC792B6B8F79D64F8793 /* ActivityCalendar */,
 				11A0A863214429E38C333917 /* Components */,
 				32C79C75C31E4B21F7E04F48 /* MoodScreen */,
+				D325AE210AC657600FFFC68D /* ProfileScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -113,6 +131,7 @@
 				F74816057896EA94F5091DD8 /* CategoryItem.swift */,
 				4E6F083D24D8D264F9484D2E /* MoodTag.swift */,
 				B921898FF5C7A3D0C625118E /* ReasonTag.swift */,
+				FE8C130F0A4899200A82A39B /* ServerImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -139,6 +158,14 @@
 			path = MoodScreen;
 			sourceTree = "<group>";
 		};
+		3D00CC9B11B1E9AFAC19A64D /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AEB4676698015EA00FDFD27D /* RegisterScreen.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
 		3DD7DC62569D2593224FA0BB = {
 			isa = PBXGroup;
 			children = (
@@ -156,12 +183,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		5E004BF22C62C4D000253B2B /* ProfileScreen */ = {
+		5008417C652BB5522048DDD3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				5E004BF32C62C52800253B2B /* ProfileScreen.swift */,
+				43C3F3986DCC4D9B1E2685A9 /* ServerConfig.swift */,
+				5FEFD2B0033AAE7CA5DDABB4 /* SocketService.swift */,
 			);
-			path = ProfileScreen;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		67D010DB53BD921ED7C8ADA2 /* Models */ = {
@@ -169,6 +197,7 @@
 			children = (
 				26CB1B32F95E483FA1B38042 /* Feeling.swift */,
 				78E9FB1E4BEF150DD911915D /* JournalEntry.swift */,
+				AEA1F17A4233CBBA604C6D62 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,8 +221,21 @@
 				67D010DB53BD921ED7C8ADA2 /* Models */,
 				BC7EF594E0F40FC935ACA135 /* Preview Content */,
 				11350E6267BC91019891AAB8 /* Screens */,
+				5008417C652BB5522048DDD3 /* Service */,
 			);
 			path = MoodJournal;
+			sourceTree = "<group>";
+		};
+		D325AE210AC657600FFFC68D /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				92B0AF25BD76041272B7D753 /* FriendItem.swift */,
+				3CA41C7D6ACC414EA8412B4B /* PhotoViewModel.swift */,
+				C30452F7F81004793835340B /* ProfileScreen.swift */,
+				B8BD40181C07446777C78B98 /* ProfileViewModel.swift */,
+				3D00CC9B11B1E9AFAC19A64D /* LoginScreen */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 		F19ADC792B6B8F79D64F8793 /* ActivityCalendar */ = {
@@ -226,6 +268,7 @@
 			packageProductDependencies = (
 				5920409FF73D36423A2EF9FA /* SocketIO */,
 				B3AA9318B9D7878F9DAE776E /* WrappingHStack */,
+				4F08302B7F202EF02D2F2C06 /* Alamofire */,
 			);
 			productName = MoodJournal;
 			productReference = E23FE034BB7C6193EA452DE6 /* MoodJournal.app */;
@@ -255,7 +298,8 @@
 			);
 			mainGroup = 3DD7DC62569D2593224FA0BB;
 			packageReferences = (
-				D3292E222B916E07ED89C686 /* XCRemoteSwiftPackageReference "socket" */,
+				0BAB264F8E59D9CED8552966 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D3292E222B916E07ED89C686 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
 				6E3DDB62DF436E636BF3CA05 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
 			);
 			projectDirPath = "";
@@ -294,15 +338,23 @@
 				6086D2C1EEDE4FE7FC5B402D /* ContentView.swift in Sources */,
 				8F0AFA12C46E6EA07DF2916F /* DateExtension.swift in Sources */,
 				0510E6CDBC84B9A1B051799E /* Feeling.swift in Sources */,
+				E0E9984309681BEBBB7172F8 /* FriendItem.swift in Sources */,
 				5BF9043EF5B9338B565B4079 /* JournalEntry.swift in Sources */,
 				3595713145BC594CEED07762 /* JournalEntryScreen.swift in Sources */,
 				D5A2CEA6AF3BABCDECBBBD4A /* MonthScreen.swift in Sources */,
 				E7BEBA4A3358EF760363046B /* MoodJournalApp.swift in Sources */,
-				5E004BF42C62C52800253B2B /* ProfileScreen.swift in Sources */,
 				23A7F9C02BF73DC758F1FAE3 /* MoodScreen.swift in Sources */,
 				218C7E2905D52E88C8F19355 /* MoodTag.swift in Sources */,
 				4518AE5D8FB88992D79A066C /* MoodViewModel.swift in Sources */,
+				3AC1A133BC08EABEB910EB39 /* PhotoViewModel.swift in Sources */,
+				2BF261B4E23DAD8211238FCE /* ProfileScreen.swift in Sources */,
+				A811EE25C8F426067033FC28 /* ProfileViewModel.swift in Sources */,
 				F183611DC2F2C3BD44C21674 /* ReasonTag.swift in Sources */,
+				28BFE021D83F4C2945B045E9 /* RegisterScreen.swift in Sources */,
+				D0EB8285FD6AEFAA9E0676B6 /* ServerConfig.swift in Sources */,
+				A9A703399339FC000DEC6556 /* ServerImage.swift in Sources */,
+				53F87A7A925CA4203F2BBDA7 /* SocketService.swift in Sources */,
+				3C26F877CCF450E6847E7C05 /* User.swift in Sources */,
 				B08E26F5846556CF224AB736 /* ViewExtension.swift in Sources */,
 				09F386EBEC6587B40A7C2A4D /* WeekScreen.swift in Sources */,
 			);
@@ -490,6 +542,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0BAB264F8E59D9CED8552966 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.9.1;
+			};
+		};
 		6E3DDB62DF436E636BF3CA05 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ksemianov/WrappingHStack";
@@ -498,7 +558,7 @@
 				version = 0.2.0;
 			};
 		};
-		D3292E222B916E07ED89C686 /* XCRemoteSwiftPackageReference "socket" */ = {
+		D3292E222B916E07ED89C686 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
 			requirement = {
@@ -509,9 +569,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4F08302B7F202EF02D2F2C06 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BAB264F8E59D9CED8552966 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		5920409FF73D36423A2EF9FA /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D3292E222B916E07ED89C686 /* XCRemoteSwiftPackageReference "socket" */;
+			package = D3292E222B916E07ED89C686 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
 			productName = SocketIO;
 		};
 		B3AA9318B9D7878F9DAE776E /* WrappingHStack */ = {

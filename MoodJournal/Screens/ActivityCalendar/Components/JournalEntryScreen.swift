@@ -29,10 +29,9 @@ struct JournalEntryScreen: View {
             Spacer()
         }
         .padding()
-//        .padding(.leading, 20)
         .background {
             RoundedRectangle(cornerRadius: 20)
-                .shadow(radius: 10)
+                .shadow(color: .primary, radius: 10)
                 .frame(width: screenWidth - 30)
                 .foregroundStyle(Color("journalbackground"))
         }
@@ -40,5 +39,5 @@ struct JournalEntryScreen: View {
 }
 
 #Preview {
-    JournalEntryScreen(journalEntry: JournalEntry(id: "2", title: "Schwimmen", description: "Mit Mama am See banden", date: Date()))
+    JournalEntryScreen(journalEntry: JournalEntry(id: 2, title: "Schwimmen", description: "Mit Mama am See banden", date: Date()))
 }

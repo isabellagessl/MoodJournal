@@ -35,7 +35,7 @@ struct AddReasonsScreen: View {
             
             Spacer().frame(height: 15)
             BigButton(title: "save", onClick: {
-                moodViewModel.currentFeeling = Feeling(moodId: selectedMood.id, reasonIds: reasons.map({$0.id}), id: "1", date: Date())
+                moodViewModel.currentFeeling = Feeling(moodId: selectedMood.id, reasonIds: reasons.map({$0.id}), id: 1, date: Date())
                 showSheet.toggle()
             })
             .padding()

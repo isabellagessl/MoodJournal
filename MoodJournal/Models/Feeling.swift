@@ -8,9 +8,9 @@
 import Foundation
 
 struct Feeling: Codable, Identifiable, Hashable {
-    var moodId: String
-    var reasonIds: [String]
-    var id: String
+    var moodId: Int
+    var reasonIds: [Int]
+    var id: Int
     var date: Date
     
     static func decodeJSON(from data: Data) throws -> [Feeling] {
@@ -27,7 +27,7 @@ struct Feeling: Codable, Identifiable, Hashable {
 }
 
 struct Category: Codable, Identifiable, Hashable {
-    var id: String
+    var id: Int
     var color: String
     var name: String
     var symbol: String
@@ -44,9 +44,9 @@ struct Category: Codable, Identifiable, Hashable {
 }
 
 struct Mood: Identifiable, Codable, Hashable {
-    var id: String
+    var id: Int
     var name: String
-    var categroyId: String
+    var categroyId: Int
     
     static func decodeJSON(from data: Data) throws -> [Mood] {
         let decoder = JSONDecoder()
@@ -60,7 +60,7 @@ struct Mood: Identifiable, Codable, Hashable {
 }
 
 struct Reason: Codable, Hashable, Identifiable {
-    var id: String
+    var id: Int
     var name: String
     var symbol: String
     

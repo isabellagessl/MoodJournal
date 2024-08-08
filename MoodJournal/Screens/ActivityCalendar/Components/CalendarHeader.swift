@@ -63,7 +63,6 @@ struct CalendarHeader: View {
             calendarViewModel.currentMonthIndex = currentMonthIndex
             calendarViewModel.paginateWeek()
             currentMonthIndex = calendarViewModel.currentMonthIndex
-            let _ = print(currentMonthIndex)
         }
         .onChange(of: changeToToday) {
             if changeToToday {

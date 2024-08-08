@@ -15,7 +15,7 @@ struct AddMoodScreen: View {
     @State var selectedMood: Mood?
     
     init(moodViewModel: Binding<MoodViewModel>, showSheet: Binding<Bool>) {
-        _selectedCategory = State(initialValue: moodViewModel.categories.first?.wrappedValue ?? Category(id: "0", color: "", name: "", symbol: ""))
+        _selectedCategory = State(initialValue: moodViewModel.categories.first?.wrappedValue ?? Category(id: 0, color: "", name: "", symbol: ""))
         self._moodViewModel = moodViewModel
         self._showSheet = showSheet
     }
@@ -34,14 +34,12 @@ struct AddMoodScreen: View {
                 Spacer().frame(height: 15)
                 WrappingHStack {
                     ForEach(moodViewModel.getMoodsForCategoryId(categoryId: selectedCategory.id), id: \.id) { mood in
-                        MoodTag(mood: mood, active: selectedMood?.id ?? "" == mood.id, category: selectedCategory, onClick: {selectedMood = mood})
+                        MoodTag(mood: mood, active: selectedMood?.id ?? 0 == mood.id, category: selectedCategory, onClick: {selectedMood = mood})
                     }
                 }
                 Spacer().frame(height: 15)
                 NavigationLink {
-                    let _ = print("hihi")
                     if let mood = selectedMood {
-                        let _ = print("mood")
                         AddReasonsScreen(moodViewModel: $moodViewModel, showSheet: $showSheet, selectedCategory: $selectedCategory, selectedMood: .constant(mood), reasons: [])
                     }
                 } label: {

@@ -10,6 +10,9 @@ packages:
   SocketIO:
     url: https://github.com/socketio/socket.io-client-swift
     version: 16.1.0
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire
+    version: 5.9.1
 
 targets:
   MoodJournal:
@@ -25,6 +28,8 @@ targets:
         product: SocketIO
       - package: WrappingHStack
         product: WrappingHStack
+      - package: Alamofire
+        product: Alamofire
     settings:
       TARGETED_DEVICE_FAMILY: 1
       PRODUCT_NAME: MoodJournal

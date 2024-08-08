@@ -70,7 +70,7 @@ struct AddActivityScreen: View {
             
             Spacer().frame(height: 30)
             
-            BigButton(title: "save", onClick: {calendarViewModel.journalEntries.append(JournalEntry(id: "", title: title, description: description, date: date))
+            BigButton(title: "save", onClick: {calendarViewModel.journalEntries.append(JournalEntry(id: 0, title: title, description: description, date: date))
                 showSheet = false
             })
         }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct JournalEntry: Codable, Identifiable, Hashable {
-    var id: String
+    var id: Int
     var title: String
     var description: String
     var date: Date
